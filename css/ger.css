@@ -1,0 +1,174 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	background: url(../img/home_container_background.jpg);
+}
+
+#jieshao-box{
+	width: 60%;
+	background: #FFFFFF;
+	border: 3px solid #8599A2;
+	position: absolute;
+	border-radius: 10%;
+	top: 5%;
+	left: 20%;
+	padding: 10px;
+	font-family: 思源黑体;
+	text-align: center;
+	opacity: 0.8;
+	display: none;
+}
+
+
+.loading {
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.loading-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 142px;
+    background-image: url(../img/cat_loading.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    	    animation: loading 3s infinite step-start backwards;
+       -moz-animation: loading 3s infinite step-start backwards;
+    -webkit-animation: loading 3s infinite step-start backwards;
+}
+.loading-img:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 2px solid #bdbdbd;
+    width: 100%;
+    height: 30px;
+    top: 100%;
+    background: url(../img/loading_shadow.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.loading-img span {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150%;
+    color: black;
+    font-family: 汉仪黑荔枝体简;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    opacity: 0.6;
+    animation: fonts 3s infinite step-start backwards;
+       -moz-animation: fonts 3s infinite step-start backwards;
+    -webkit-animation: fonts 3s infinite step-start backwards;
+}
+
+.loading-img span a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.loading-img span a:hover{
+	font-size: 45px;
+	text-decoration: underline;
+}
+
+#go_back_to_index_bar {
+    height: 40px;
+    width: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    animation: move 2s infinite linear;
+    -webkit-animation: move 2s infinite linear;
+    }
+    
+    #go_back_to_index {
+    text-align: center;
+    z-index: 99;
+    height: 11%;
+    position: fixed;
+    top: 0%;
+    width: 44px;
+    right: 27%;
+}
+
+#go_back_to_index_round {
+    position: relative;
+    right: 4%;
+    top: -2px;
+    font-family: "方正细等线_GBK";
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#go_back_to_index_round:hover{
+	cursor: pointer;
+}
+
+@keyframes loading {
+    0% {background-position: center 0px;}
+    6.25% {background-position: center -142px;}
+    12.5% {background-position: center -284px;}
+    18.75% {background-position: center -426px;}
+    25% {background-position: center -568px;}
+    31.25% {background-position: center -710px;}
+    37.5% {background-position: center -852px;}
+    43.75% {background-position: center -994px;}
+    50% {background-position: center -1136px;}
+    56.25% {background-position: center -1278px;}
+    62.5% {background-position: center -1420px;}
+    68.75% {background-position: center -1562px;}
+    75% {background-position: center -1704px;}
+    81.25% {background-position: center -1846px;}
+    87.5% {background-position: center -1988px;}
+    93.75% {background-position: center -2130px;}
+    100% {background-position: center 0px;}
+}
+
+@keyframes move{
+	0%{height: 40px;}
+	50%{height: 100px;}
+	100%{height: 40px;}
+}
+
+
+@keyframes fonts{
+	 0% {font-size: 50px;}
+    6.25% {font-size: 45px;}
+    12.5% {font-size: 40px;}
+    18.75% {font-size: 35px;}
+    25% {font-size: 30px;}
+    31.25% {font-size: 35px;}
+    37.5% {font-size: 40px;}
+    43.75% {font-size: 45px;}
+    50% {font-size: 50px;}
+    56.25% {font-size: 45px;}
+    62.5% {font-size: 40px;}
+    68.75% {font-size: 35px;}
+    75% {font-size: 30px;}
+    81.25% {font-size: 35px;}
+    87.5% {font-size: 40px;}
+    93.75% {font-size: 45px;}
+    100% {font-size: 50px;}
+}

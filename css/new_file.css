@@ -1,0 +1,249 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+body{
+	width:100% ;
+	background: url(../img/172049.jpg) no-repeat center top;
+    background-color: #f1f3e5;
+    background-size: 100% auto;
+	line-height: 1.4em;
+}
+
+.andiu{
+	padding-left: 20px;
+	line-height: 50px;
+	width: 80px;
+	background: #0088BB;
+	color: #FFFFFF;
+	margin-top:20% ;
+	margin-left: 23%;
+	float: left;
+}
+
+.content{
+	width: 85%;
+	background: #FFFFFF;
+	border: 5px solid #0088BB;
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    border-radius: 15px;
+    margin-bottom:15px ;
+    box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+}
+
+.font-top{
+	width: 100%;
+    max-width: 100%;
+	font-size: 12px;
+	
+	margin: 5px 10px;
+	overflow: hidden;
+}
+
+.font-top span{
+	color: red;
+}
+
+.menu{
+	width: 100%;
+	height: auto;
+	font-size: 13px;
+	padding-top: 10px;
+	text-align: center;
+}
+.menu a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.menu-long{
+	width: 92%;
+	background: #00BCD4;
+	color: #FFFFFF;
+	border-radius:5px ;
+	line-height: 30px;
+	margin-top:10px ;
+}
+
+.menu-long:hover{
+    background: #0088BB;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.menu-smell{
+	width: 26%;
+	background: #3388CC;
+	float: left;
+    margin-left: 4%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+.menu-smell2{
+	width: 26%;
+	background: #6495ED;
+	float: left;
+    margin-left: 4%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+.menu-smell2:hover{
+    background: #0000FF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.menu-smell:hover{
+    background: #005599;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.user-line-1{
+	width: 33%;
+	float: left;
+	margin-top:20px;
+
+
+}
+
+.user-line-1-1{
+	width: 95%;
+	height: 100%;
+	margin-bottom:20px ;
+	padding: 0;
+	background: #eeeeee;
+	box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+
+.jieshao{
+	width: 100%;
+	padding-left: 5px;
+	background: #eeeeee;
+	font-size:12px ;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 20px;
+    float: left;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.fond{
+	width: 50%;
+	color: white;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    line-height: 41px;
+    border: none;
+    background-color: #9C9DDD;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.fond-2{
+	width: 50%;
+	color: white;
+    float: left;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    line-height: 41px;
+    background-color: #0088BB;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.fond-2:hover{
+    background: #00BCD4;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.fond:hover{
+    background: #6495ED;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.user-line-2{
+	width: 33%;
+	float: left;
+	margin-top:20px;
+	display: inline;
+}
+
+.user-line-3{
+	width: 33%;
+	float: left;
+	margin-top:20px;
+	display: inline;
+}
+
+.user-line-4{
+	width: 33%;
+	float: left;
+	margin-top:20px;
+	display: inline;
+}
+
+.content-1{
+	border:3px solid #FFB11B;
+	background: #EEEEEE;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 40px;
+	position: fixed;
+	top: 2%;
+	width: 85%;
+	left: 2%;
+	height: auto;
+	z-index: 2000;
+	display: none;
+	padding: 15px;
+	animation-play-state: paused;
+	transform: translate(50px)
+	opacity: 1;
+}
+
+.close{
+	border: none;
+    padding: 0.6em 1.2em;
+    background: #c0392b;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 2px;
+}
+
+.footer{
+	width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #BDC3C7;
+}

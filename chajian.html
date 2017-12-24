@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>云猫APP|给你不一样的云养猫体验</title>
+		<link rel="stylesheet" href="css/chajian.css" />
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+    var parent = document.querySelector('.splitview'),
+        topPanel = parent.querySelector('.top'),
+        handle = parent.querySelector('.handle'),
+        skewHack = 0,
+        delta = 0;
+
+    // If the parent has .skewed class, set the skewHack var.
+    if (parent.className.indexOf('skewed') != -1) {
+        skewHack = 1000;
+    }
+
+    parent.addEventListener('mousemove', function(event) {
+        // Get the delta between the mouse position and center point.
+        delta = (event.clientX - window.innerWidth / 2) * 0.5;
+
+        // Move the handle.
+        handle.style.left = event.clientX + delta + 'px';
+
+        // Adjust the top panel width.
+        topPanel.style.width = event.clientX + skewHack + delta + 'px';
+    });
+});
+		</script>
+	</head>
+	<body>
+		  <div class="splitview skewed">
+        <div class="panel bottom">
+            <div class="content">
+                <div class="description">
+                    <h1>治愈心灵</h1>
+                    <p>有我的陪伴接下来的日子要好好加油啊~~喵~</p>
+                </div>
+
+                <img src="img/1587_j1wzavyz.jpg" alt="Original">
+            </div>
+        </div>
+
+        <div class="panel top">
+            <div class="content">
+       
+                <div class="description">
+                    <h1>我就这么看着你</h1>
+                    <p>喵~难道你没有被我俘获吗？</p>
+                </div>
+               
+                <img src="img/1587_j26zncz4.png" alt="Duotone">
+            </div>
+            
+        </div>
+
+        <div class="handle"></div>
+    </div>
+    
+    <div class="con">
+    	
+    	<div class="con2">
+    		<a href="download.rar"><strong>立即下载</strong></a>
+    	</div>
+    	<div class="con-1">
+    		
+    		<img src="img/cha_nav_logo.png" />
+    	<strong style="color: #ffffff;">云猫APP</strong>
+    	</div>
+    	 
+    	<div class="con-2">
+    		
+    		<a href="index1.html"><span>返回官网</span></a>
+    	</div>
+    </div>
+	</body>
+</html>
